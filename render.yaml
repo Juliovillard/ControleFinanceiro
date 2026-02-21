@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: controle-financeiro
+    runtime: node
+    buildCommand: npm install && npm install --prefix backend
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
