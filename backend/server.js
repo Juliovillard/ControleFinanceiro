@@ -11,6 +11,12 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
+// Servir arquivos estáticos do React build
+const buildPath = path.join(__dirname, '../build');
+if (fs.existsSync(buildPath)) {
+  app.use(express.static(buildPath));
+}
+
 // Garantir que a pasta data existe
 const dataDir = path.join(__dirname, '../data');
 if (!fs.existsSync(dataDir)) {
@@ -139,6 +145,16 @@ app.get('/api/categories', (req, res) => {
       res.json(rows || []);
     }
   );
+});
+
+// Rota catch-all para servir index.html (SPA fallback)
+app.get('*', (req, res) => {
+  const indexPath = path.join(__dirname, '../build/index.html');
+  if (fs.existsSync(indexPath)) {
+    res.sendFile(indexPath);
+  } else {
+    res.status(404).json({ error: 'Página não encontrada' });
+  }
 });
 
 app.listen(PORT, '0.0.0.0', () => {
