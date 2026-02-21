@@ -1,0 +1,77 @@
+SOLUÇÃO: npm/node não reconhecido
+═════════════════════════════════════════════════════════════
+
+TENTE ISSO PRIMEIRO (90% resolve):
+═════════════════════════════════════════════════════════════
+
+1. REINICIE O COMPUTADOR
+   ✓ Pressione Windows + Shift + Restart
+   ou
+   ✓ Desliga e liga normally
+
+2. Após reiniciar, abra PowerShell novamente e tente:
+   npm --version
+
+
+SE NÃO FUNCIONAR:
+═════════════════════════════════════════════════════════════
+
+SOLUÇÃO 2: Verifique se Node.js está instalado
+
+1. Abra: C:\Program Files\nodejs
+2. Procure por "node.exe" e "npm.cmd"
+
+Se NÃO tiver:
+- Baixe Node.js em https://nodejs.org/
+- Instale a versão LTS
+- Reinicie o computador
+
+
+SOLUÇÃO 3: Adicione ao PATH manualmente
+
+1. Pressione Windows + X
+2. Escolha "Sistema"
+3. Clique "Configurações avançadas do sistema"
+4. Clique "Variáveis de Ambiente"
+5. Em "Variáveis do sistema", procure "Path"
+6. Clique "Editar"
+7. Clique "Novo"
+8. Cole: C:\Program Files\nodejs
+9. Clique OK várias vezes
+10. Feche tudo e REINICIE
+
+Depois teste:
+  npm --version
+
+
+SOLUÇÃO 4: Reinstale Node.js
+
+1. Desinstale Node.js:
+   ✓ Painel de Controle → Programas → Node.js → Desinstalar
+
+2. Baixe novamente:
+   https://nodejs.org/ (versão LTS)
+
+3. Instale e ESCOLHA:
+   ✓ "Add to PATH" (marque essa opção!)
+
+4. Reinicie o computador
+
+5. Teste no PowerShell:
+   npm --version
+   
+Se tudo der OK, volte à pasta e execute:
+   npm run dev-all
+
+
+PRECISA DE AJUDA?
+═════════════════════════════════════════════════════════════
+Se nenhuma solução funcionar, tente:
+
+Abra PowerShell com CAMINHO COMPLETO:
+
+  "C:\Program Files\nodejs\node.exe" --version
+  
+  "C:\Program Files\nodejs\npm.cmd" --version
+
+Se isso funcionar, o problema é só o PATH.

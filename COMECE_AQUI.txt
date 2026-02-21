@@ -1,0 +1,60 @@
+PRONTO! ✓ App de Finanças Instalado
+════════════════════════════════════════════════════════════
+
+AGORA EXECUTE ASSIM:
+════════════════════════════════════════════════════════════
+
+Duplo clique em: INICIO.bat
+
+Vai aparecer um menu:
+  1) TUDO JUNTO (Recomendado!)
+  2) Só Backend
+  3) Só Frontend
+
+ESCOLHA A OPÇÃO 1 e pressione Enter!
+
+
+O QUE ACONTECE:
+════════════════════════════════════════════════════════════
+
+✓ Abre uma janela do Backend (porta 5000) 
+✓ Abre uma janela do Frontend (porta 3000)
+✓ Uma janela do app desktop vai abrir
+✓ Aguarde 30 segundos na primeira vez
+
+
+PRONTO! 🎉
+════════════════════════════════════════════════════════════
+
+Agora você pode:
+  - Adicionar receitas e despesas
+  - Ver gráficos de gastos
+  - Gerenciar suas finanças
+
+
+NÃO FECHE NENHUMA JANELA do terminal/cmd!
+Elas precisam estar abertas para o app funcionar.
+
+
+ATALHOS:
+════════════════════════════════════════════════════════════
+
+F12 = Abrir desenvolvedor (se precisar verificar erros)
+
+Para parar:
+  - Feche a janela do app
+  - Pressione Ctrl+C nas janelas de terminal
+
+
+PROBLEMAS?
+════════════════════════════════════════════════════════════
+
+"Porta 5000 já está em uso"
+  → Feche programas que usam a porta
+  → Ou reinicie o Windows
+
+"App não abre"  
+  → Espere mais 30 segundos na primeira execução
+  → Verifique F12 para ver erros
+
+Precisa de ajuda? Deixe a janela aberta e avise!

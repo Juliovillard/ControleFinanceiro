@@ -1,0 +1,73 @@
+PROBLEMA: Janela do Backend fecha muito rápido
+════════════════════════════════════════════════════════════
+
+SOLUÇÃO: Teste agora com o novo script!
+════════════════════════════════════════════════════════════
+
+1. Duplo clique em: TESTE_BACKEND.bat
+
+2. Agora você verá:
+   ✓ Se Node.js está ok
+   ✓ Se os arquivos estão no lugar certo
+   ✓ Se a pasta data/ será criada
+   ✓ O servidor rodando
+
+3. Você VERÁ A MENSAGEM:
+   "Servidor rodando em http://localhost:5000"
+
+4. Se houver erro, a janela NÃO vai fechar
+   Você conseguirá ler a mensagem de erro
+
+
+SE FUNCIONAR:
+════════════════════════════════════════════════════════════
+
+Great! Agora use o INICIO.bat normalmente:
+
+1. Duplo clique em INICIO.bat
+2. Digite: 1
+3. Enter
+
+Ele vai abrir:
+  - Backend (verde)
+  - Frontend (azul)
+  - App Electron
+
+Deixe todas as janelas abertas enquanto usa!
+
+
+SE NÃO FUNCIONAR:
+════════════════════════════════════════════════════════════
+
+Avise qual é o ERRO que aparece na janela.
+
+Erros comuns:
+
+❌ "Porta 5000 já está em uso"
+→ Outro programa está usando
+→ Solução: feche programas ou reinicie Windows
+
+❌ "Cannot find module 'express'"
+→ npm install não funcionou
+→ Solução: execute novamente:
+   cd "c:\Users\Julio\OneDrive\Área de Trabalho\programa\backend"
+   npm install
+
+❌ "Cannot find module 'sqlite3'"
+→ Node não achou a dependência
+→ Solução: mesma acima
+
+❌ Qualquer outro erro
+→ Me manda a mensagem que aparece!
+
+
+IMPORTANTE:
+════════════════════════════════════════════════════════════
+
+NÃO FECHE A JANELA DO BACKEND enquanto usa o app!
+Se fechar, o app para de funcionar.
+
+Para parar o servidor:
+  → Na janela do backend, pressione Ctrl+C
+  → A janela vai perguntar se quer parar (S)
+  → Pressione S e Enter

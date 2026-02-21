@@ -1,0 +1,154 @@
+.transaction-list {
+  background: linear-gradient(135deg, #1a1f3a 0%, #16213e 100%);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  flex: 1;
+  border: 1px solid #2d3748;
+}
+
+.transaction-list h2 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+  font-size: 1.3em;
+}
+
+.transactions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(15, 15, 30, 0.5);
+  border-left: 4px solid #2d3748;
+  transition: all 0.3s ease;
+}
+
+.transaction-item:hover {
+  background: rgba(45, 55, 72, 0.5);
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 212, 255, 0.1);
+}
+
+.transaction-item.receita {
+  border-left-color: #00d4ff;
+}
+
+.transaction-item.despesa {
+  border-left-color: #ff6b9d;
+}
+
+.transaction-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.category-emoji {
+  font-size: 1.5em;
+}
+
+.transaction-info {
+  flex: 1;
+}
+
+.transaction-category {
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 4px;
+}
+
+.transaction-description {
+  font-size: 0.85em;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.transaction-date {
+  font-size: 0.8em;
+  color: #555;
+}
+
+.transaction-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.transaction-amount {
+  font-weight: 700;
+  font-size: 1.1em;
+  min-width: 100px;
+  text-align: right;
+}
+
+.transaction-amount.receita {
+  color: #00d4ff;
+}
+
+.transaction-amount.despesa {
+  color: #ff6b9d;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.empty-state p {
+  margin-bottom: 10px;
+}
+
+.empty-hint {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f1e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d3748;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4ff;
+}

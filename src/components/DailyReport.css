@@ -1,0 +1,311 @@
+.daily-report {
+  background: linear-gradient(135deg, #1a1f3a 0%, #16213e 100%);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  border: 1px solid #2d3748;
+}
+
+.report-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #00d4ff;
+}
+
+.period-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.period-selector label {
+  font-weight: 600;
+  color: #b0b0d0;
+  font-size: 0.85em;
+}
+
+.period-selector select {
+  padding: 8px 12px;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  font-size: 0.95em;
+  background: #0f0f1e;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.period-selector select:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.date-range {
+  display: flex;
+  gap: 12px;
+}
+
+.date-input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.date-input label {
+  font-weight: 600;
+  color: #b0b0d0;
+  font-size: 0.85em;
+}
+
+.date-input input {
+  padding: 8px 12px;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  font-size: 0.95em;
+  background: #0f0f1e;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.date-input input:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.export-btn {
+  background: linear-gradient(135deg, #00d4ff 0%, #9d4edd 100%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.export-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+.export-btn:active {
+  transform: translateY(0);
+}
+
+.report-content {
+  background: transparent;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.report-header {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #2d3748;
+}
+
+.report-header h2 {
+  color: #00d4ff;
+  margin-bottom: 5px;
+  font-size: 1.4em;
+}
+
+.report-header p {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.report-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.report-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgba(15, 15, 30, 0.5);
+  border-radius: 8px;
+  border-left: 4px solid #2d3748;
+}
+
+.report-card.income {
+  border-left-color: #00d4ff;
+}
+
+.report-card.income .report-value {
+  color: #00d4ff;
+}
+
+.report-card.expense {
+  border-left-color: #ff6b9d;
+}
+
+.report-card.expense .report-value {
+  color: #ff6b9d;
+}
+
+.report-card.balance.positive {
+  border-left-color: #00ff00;
+}
+
+.report-card.balance.positive .report-value {
+  color: #00ff00;
+}
+
+.report-card.balance.negative {
+  border-left-color: #ffa500;
+}
+
+.report-card.balance.negative .report-value {
+  color: #ffa500;
+}
+
+.report-label {
+  font-size: 0.85em;
+  color: #b0b0d0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.report-value {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.report-transactions {
+  margin-top: 20px;
+}
+
+.report-transactions h3 {
+  color: #e0e0e0;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.transaction-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(15, 15, 30, 0.5);
+  border-radius: 6px;
+  border-left: 3px solid #2d3748;
+}
+
+.transaction-row.receita {
+  border-left-color: #00d4ff;
+}
+
+.transaction-row.despesa {
+  border-left-color: #ff6b9d;
+}
+
+.emoji {
+  font-size: 1.3em;
+  flex-shrink: 0;
+}
+
+.transaction-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.category {
+  font-weight: 600;
+  color: #e0e0e0;
+  text-transform: capitalize;
+  font-size: 0.95em;
+}
+
+.description {
+  font-size: 0.85em;
+  color: #888;
+}
+
+.date {
+  font-size: 0.8em;
+  color: #555;
+}
+
+.amount {
+  font-weight: 700;
+  min-width: 100px;
+  text-align: right;
+  font-size: 0.95em;
+}
+
+.amount.receita {
+  color: #00d4ff;
+}
+
+.amount.despesa {
+  color: #ff6b9d;
+}
+
+.empty-report {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  background: rgba(15, 15, 30, 0.5);
+  border-radius: 8px;
+}
+
+.empty-report p {
+  font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+  .report-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .report-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .period-selector select,
+  .date-input input,
+  .export-btn {
+    width: 100%;
+  }
+
+  .date-range {
+    flex-direction: column;
+  }
+
+  .daily-report {
+    padding: 15px;
+  }
+
+  .report-content {
+    padding: 15px;
+  }
+
+  .report-value {
+    font-size: 1.4em;
+  }
+}

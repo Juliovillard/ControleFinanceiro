@@ -1,0 +1,110 @@
+🚀 FINANCE APP - GUIA DE EXECUÇÃO RÁPIDA
+════════════════════════════════════════════════════════════
+
+PASSO 1: Teste o Backend Primeiro
+════════════════════════════════════════════════════════════
+
+Duplo clique em: TESTE_BACKEND.bat
+
+Você vai ver algo assim (não se assuste com as cores):
+
+  [1/5] Checando Node.js...
+  v18.0.0
+  OK
+
+  [2/5] Checando pasta backend...
+  OK - pasta backend encontrada
+
+  [3/5] Checando server.js...
+  OK - server.js encontrado
+
+  [4/5] Criando pasta data...
+  OK
+
+  [5/5] Iniciando servidor...
+
+  ╔════════════════════════════════════════════════════╗
+  ║  FINANCE APP - Backend Server                      ║
+  ║  Servidor rodando em:                              ║
+  ║  ✓ http://localhost:5000                           ║
+  ║  NÃO FECHE ESTA JANELA!                           ║
+  ║  Pressione Ctrl+C para parar                       ║
+  ╚════════════════════════════════════════════════════╝
+
+Perfeito! O backend funciona! ✓
+
+
+PASSO 2: Inicie tudo junto
+════════════════════════════════════════════════════════════
+
+1. Deixe o TESTE_BACKEND.bat aberto
+
+2. Em OUTRA JANELA, duplo clique em: INICIO.bat
+
+3. Escolha: 1
+
+4. Enter
+
+5. Vai abrir:
+   - Uma janela verde (Backend - deixe aberta)
+   - Uma janela azul (Frontend - deixa abrir)
+   - O app Electron (a interface do Finance App)
+
+6. Aguarde 30 segundos...
+
+
+PASSO 3: Use o App!
+════════════════════════════════════════════════════════════
+
+Agora você deve ver a interface:
+  - Cards de receita/despesa/saldo
+  - Formulário para adicionar transações
+  - Gráfico de gastos
+  - Lista de todas as transações
+
+Tente adicionar uma transação teste!
+
+
+PROBLEMAS COMUNS:
+════════════════════════════════════════════════════════════
+
+Q: A janela fecha muito rápido
+A: Execute TESTE_BACKEND.bat para ver o erro real
+
+Q: "Porta 5000 já está em uso"
+A: Outro programa está usando a porta
+   → Reinicie o Windows
+   → Ou feche programas que usam a porta
+
+Q: "Cannot find module"
+A: Há uma dependência faltando
+   → Abra PowerShell na pasta
+   → Execute: npm install
+   → Depois: cd backend && npm install
+
+Q: O Frontend abre mas o app não funciona
+A: O Backend não está rodando
+   → Verifique se a janela verde está aberta
+   → Cole a mensagem de erro que você vê
+
+
+NÃO SABE O QUE ESTÁ ERRADO?
+════════════════════════════════════════════════════════════
+
+Mande para a gente:
+
+1. O que você vê quando clica no BACKEND.bat?
+2. Qual é a mensagem de erro? (copie exatamente)
+3. Qual Windows você tem? (7, 10, 11?)
+
+Assim conseguimos ajudar melhor!
+
+
+ATALHOS ÚTEIS:
+════════════════════════════════════════════════════════════
+
+Ctrl+C = parar o servidor (na janela verde ou azul)
+F12 = abrir desenvolvedor (se houver erro no app)
+Alt+Tab = alternar entre janelas
+
+Boa sorte! 💪

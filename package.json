@@ -1,0 +1,51 @@
+{
+  "name": "finance-app",
+  "version": "1.0.0",
+  "description": "App de Controle Financeiro Pessoal",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "author": "Seu Nome",
+  "license": "MIT",
+  "scripts": {
+    "dev": "react-scripts start",
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "build": "npm run react-build",
+    "server": "node ./backend/server.js",
+    "dev-backend": "node ./backend/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chart.js": "^4.4.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4",
+    "react-scripts": "5.0.1",
+    "wait-on": "^7.2.0",
+    "web-vitals": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #1a1f3a 0%, #16213e 100%);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #2d3748;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+  border-color: #00d4ff;
+}
+
+.card-title {
+  font-size: 0.9em;
+  color: #b0b0d0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-amount {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.summary-card.income {
+  border-left: 4px solid #00d4ff;
+}
+
+.summary-card.income .card-amount {
+  color: #00d4ff;
+}
+
+.summary-card.expense {
+  border-left: 4px solid #ff6b9d;
+}
+
+.summary-card.expense .card-amount {
+  color: #ff6b9d;
+}
+
+.summary-card.balance.positive {
+  border-left: 4px solid #00ff00;
+}
+
+.summary-card.balance.positive .card-amount {
+  color: #00ff00;
+}
+
+.summary-card.balance.negative {
+  border-left: 4px solid #ffa500;
+}
+
+.summary-card.balance.negative .card-amount {
+  color: #ffa500;
+}
+
+@media (max-width: 768px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,73 @@
+╔════════════════════════════════════════════════════╗
+║      FINANCE APP - GUIA DE INSTALAÇÃO SIMPLES      ║
+╚════════════════════════════════════════════════════╝
+
+PASSO 1: Abra o PowerShell
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Clique com BOTÃO DIREITO na pasta
+✓ Escolha "Abrir Terminal Aqui" ou "Abrir PowerShell Aqui"
+
+Ou:
+✓ Pressione Windows + X
+✓ Escolha "Windows PowerShell"
+✓ Digite: cd "c:\Users\Julio\OneDrive\Área de Trabalho\programa"
+
+
+PASSO 2: Cole no PowerShell
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+npm install
+
+
+PASSO 3: Espere terminar (pode demorar 2-5 minutos)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Quando aparecer a mensagem:
+  "added X packages..."
+
+Significa que funcionou! ✓
+
+
+PASSO 4: Instale o backend
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cole no PowerShell:
+  cd backend
+  npm install
+
+
+PASSO 5: Inicie o App (escolha UMA opção abaixo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPÇÃO A - Tudo junto (Recomendado):
+  cd ..
+  npm run dev-all
+
+OPÇÃO B - Em dois terminais:
+  Terminal 1:
+    cd backend
+    node server.js
+
+  Terminal 2 (novo PowerShell na pasta programa):
+    npm run dev
+
+
+PRONTO! 🎉
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Backend: http://localhost:5000
+✓ Frontend: http://localhost:3000
+✓ App Desktop: Abre automaticamente
+
+
+ERROS COMUNS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"npm: comando não encontrado"
+→ Node.js não está instalado
+→ Baixe em https://nodejs.org/
+→ Reinicie o PowerShell após instalar
+
+"porta 5000 já está em uso"
+→ Feche outros programas que usam a porta
+→ Ou mude a porta em backend/server.js (linha 5)
+
+"Access denied"
+→ Execute PowerShell como ADMINISTRADOR
+→ Botão direito → Executar como administrador

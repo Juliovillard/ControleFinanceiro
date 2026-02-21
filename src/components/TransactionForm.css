@@ -1,0 +1,72 @@
+.transaction-form {
+  background: linear-gradient(135deg, #1a1f3a 0%, #16213e 100%);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid #2d3748;
+}
+
+.transaction-form h2 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+  font-size: 1.3em;
+}
+
+.transaction-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #b0b0d0;
+  font-size: 0.9em;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px 12px;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  background: #0f0f1e;
+  color: #e0e0e0;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+  background: #141823;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #00d4ff 0%, #9d4edd 100%);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
